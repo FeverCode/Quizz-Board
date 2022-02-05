@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Frijole&family=Poppins:ital,wght@1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Frijole&family=Poppins:ital,wght@1,900&family=Sofia&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --clr-jungle-green: #29AB87;
+    --clr-white: #FFFFFF;
+    --clr-grey: #808080;
+    --clr-black: #000000;
+
+
+    --ff-primary: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: var(--clr-jungle-green);
+    font-family: var(--ff-primary);
+    box-sizing: border-box;
+}
+
+header>h1{
+    text-align: center;
+    margin-top: 50px;
+    font-family: 'Frijole',cursive;
+    color: var(--clr-white);
+    border: none;
+    background: linear-gradient(to bottom, white, #29AB87);
+    width: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+
+}
+ .intro {
+     text-align: center;
+     margin-top: 50px;
+     color: var(--clr-white);
+     font-family: 'Sofia',cursive;
+     font-weight: bold;
+     font-size: large;
+
+ }
+
+ .quiz>p {
+     text-align: center;
+     margin-top: 50px;
+
+ }
