@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
     <title>Quizz-Board</title>
 </head>
 
@@ -19,13 +21,13 @@
     </div>
     <div class="container">
         <form>
-            <div id=form style="display: block;">
+            <div id="form">
                 <div class="quiz1">
                     <p>1. Which of the two operator have the same syntax of writing</p>
                     <div class="inputs">
                         <div class="form-group">
                             <label for="increment">
-                                <input value="0" type="radio" name="js" id="increment">
+                                <input value="0" type="radio" name="question1" id="increment">
                                 <span class="circle"></span>
                                 Increment and spread operator
                             </label>
@@ -34,7 +36,7 @@
 
                         <div class="form-group">
                             <label for="spread">
-                                <input value="10" type="radio" name="js" id="spread">
+                                <input value="10" type="radio" name="question1" id="spread">
                                 <span class="circle"></span>
                                 Spread operator and rest parameter
                             </label>
@@ -43,7 +45,7 @@
 
                         <div class="form-group">
                             <label for="rest">
-                                <input value="0" type="radio" name="js" id="java">
+                                <input value="0" type="radio" name="question1" id="java">
                                 <span class="circle"></span>
                                 Rest parameter and increment operator
                             </label>
@@ -52,7 +54,7 @@
 
                         <div class="form-group">
                             <label for="none">
-                                <input value="0" type="radio" name="same" id="none">
+                                <input value="0" type="radio" name="question1" id="none">
                                 <span class="circle"></span>
                                 None of the above
                             </label>
@@ -65,14 +67,14 @@
                     <div class="inputs">
                         <div class="form-group">
                             <label for="only">
-                                <input value="0" type="radio" name="named" id="only">
+                                <input value="0" type="radio" name="question2" id="only">
                                 <span class="circle"></span>
                                 Only when we use 'strict'
                             </label>
                         </div>
                         <div class="form-group">
                             <label for="no">
-                                <input value="10" type="radio" name="car" id="no">
+                                <input value="10" type="radio" name="question2" id="no">
                                 <span class="circle"></span>
                                 No
                             </label>
@@ -81,7 +83,7 @@
                     </div>
                     <div class="form-group">
                         <label for="yes">
-                            <input value="0" type="radio" name="car" id="yes">
+                            <input value="0" type="radio" name="question2" id="yes">
                             <span class="circle"></span>
                             yes
                         </label>
@@ -90,7 +92,7 @@
 
                     <div class="form-group">
                         <label for="none2">
-                            <input value="0" type="radio" name="car" id="none2">
+                            <input value="0" type="radio" name="question2" id="none2">
                             <span class="circle"></span>
                             None of the above
                         </label>
@@ -101,14 +103,14 @@
                         <div class="inputs">
                             <div class="form-group">
                                 <label for="brkt1">
-                                    <input value="10" type="radio" name="precedence" id="brkt1">
+                                    <input value="10" type="radio" name="question3" id="brkt1">
                                     <span class="circle"></span>
                                     () [].++
                                 </label>
                             </div>
                             <div class="form-group">
                                 <label for="brkt2">
-                                    <input value="0" type="radio" name="precedence" id="brkt2">
+                                    <input value="0" type="radio" name="question3" id="brkt2">
                                     <span class="circle"></span>
                                     . ++ [] ()
                                 </label>
@@ -116,14 +118,14 @@
 
                             <div class="form-group">
                                 <label for="brkt3">
-                                    <input value="0" type="radio" name="precedence" id="brkt3">
+                                    <input value="0" type="radio" name="question3" id="brkt3">
                                     <span class="circle"></span>
                                     () ++ . [
                                 </label>
                             </div>
                             <div class="form-group">
                                 <label for="brkt4">
-                                    <input value="0" type="radio" name="precedence" id="brkt4">
+                                    <input value="0" type="radio" name="question3" id="brkt4">
                                     <span class="circle"></span>
                                     ++ . [] ()
                                 </label>
@@ -133,7 +135,7 @@
                                 <div class="inputs">
                                     <div class="form-group">
                                         <label for="false">
-                                            <input value="0" type="radio" name="falsy" id="false">
+                                            <input value="0" type="radio" name="question4" id="false">
                                             <span class="circle"></span>
                                             false
                                         </label>
@@ -141,7 +143,7 @@
 
                                     <div class="form-group">
                                         <label for="undefined">
-                                            <input value="0" type="radio" name="falsy" id="undefined">
+                                            <input value="0" type="radio" name="question4" id="undefined">
                                             <span class="circle"></span>
                                             undefined
                                         </label>
@@ -149,7 +151,7 @@
 
                                     <div class="form-group">
                                         <label for="double">
-                                            <input value="0" type="radio" name="falsy" id="double">
+                                            <input value="0" type="radio" name="question4" id="double">
                                             <span class="circle"></span>
                                             ''
                                         </label>
@@ -157,32 +159,32 @@
 
                                     <div class="form-group">
                                         <label for="all">
-                                            <input value="10" type="radio" name="falsy" id="all">
+                                            <input value="10" type="radio" name="question4" id="all">
                                             <span class="circle"></span>
                                             All of the above
                                         </label>
                                     </div>
 
-                                    <div class="quiz4">
+                                    <div class="quiz5">
                                         <p>5. Which of the following reperesent truthy values in JavaScript</p>
                                         <div class="inputs">
                                             <div class="form-group">
                                                 <label for="truthy">
-                                                    <input value="0" type="radio" name="values" id="truthy">
+                                                    <input value="0" type="radio" name="question5" id="truthy">
                                                     <span class="circle"></span>
                                                     true
                                                 </label>
                                             </div>
                                             <div class="form-group">
                                                 <label for="brkt5">
-                                                    <input value="0" type="radio" name="values" id="brkt5">
+                                                    <input value="0" type="radio" name="question5" id="brkt5">
                                                     <span class="circle"></span>
                                                     []
                                                 </label>
                                             </div>
                                             <div class="form-group">
                                                 <label for="brkt6">
-                                                    <input value="0" type="radio" name="values" id="brkt6">
+                                                    <input value="0" type="radio" name="question5" id="brkt6">
                                                     <span class="circle"></span>
                                                     {}
                                                 </label>
@@ -191,17 +193,17 @@
 
                                             <div class="form-group">
                                                 <label for="above">
-                                                    <input value="10" type="radio" name="values" id="above">
+                                                    <input value="10" type="radio" name="question5" id="above">
                                                     <span class="circle"></span>
                                                     All the above
                                                 </label>
 
                                             </div>
 
-                                            <button id="submit" class="button1">SUBMIT</button>
-                                            <button id="reset" class="button2">RESET</button>
+                                            <button id="button1" type="button" onclick="getData()">SUBMIT</button>
+                                            <button id="button2">RESET</button>
 
-                                            <div id="result">You Scored 50 points</div>
+                                            <div id="result">You Scored 0 points</div>
                                             <div id="remarks">Remarks</div>
 
                                         </div>
