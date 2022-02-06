@@ -4,6 +4,7 @@ var result3 = 3;
 var result4 = 4;
 var result5 = 5;
 
+
 function score () {
   return "You scored" + total;
 }
@@ -50,6 +51,25 @@ $(document).ready(function() {
 
     $("#result").text(`You scored ${score} points.`);
 
+    var remarks = $("#remarks").val();
+    if(sum => 40){
+      $("#remarks").text('Excellent');
+
+    }
+    else if(sum == 30) {
+      $("#remarks").text('Fair');
+    }
+
+    else {
+      $('#remarks').text('Poor');
+    }
+
     
-  })
+
+
+
+    
+  });
+  
 })
+
