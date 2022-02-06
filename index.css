@@ -25,10 +25,10 @@ body {
     box-sizing: border-box;
 }
 
-header>h1{
+header>h1 {
     text-align: center;
     margin-top: 50px;
-    font-family: 'Frijole',cursive;
+    font-family: 'Frijole', cursive;
     color: var(--clr-white);
     border: none;
     background: linear-gradient(to bottom, white, #29AB87);
@@ -55,11 +55,11 @@ header>h1{
 }
 
 .container {
-   /*text-align: center;*/
+    /*text-align: center;*/
     margin-top: 50px;
-    
 
-    
+
+
 
 }
 
@@ -73,9 +73,6 @@ header>h1{
     padding-bottom: 2%;
     width: 80%;
     padding-left: 30%;
-    
-    
+
+
 }
-
-
-

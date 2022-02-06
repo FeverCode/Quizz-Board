@@ -5,11 +5,11 @@ var result4 = 4;
 var result5 = 5;
 
 
-function score () {
+function score() {
   return "You scored" + total;
 }
-$(document).ready(function() {
-  $("#button1").click(function() {
+$(document).ready(function () {
+  $("#button1").click(function () {
     var question1 = $("input:radio[name='question1']:checked").val();
     var question2 = $("input:radio[name='question2']:checked").val();
     var question3 = $("input:radio[name='question3']:checked").val();
@@ -23,10 +23,10 @@ $(document).ready(function() {
 
     if (question1 === "10") {
       result1 = 10;
-    }else {
+    } else {
       result1 = 0;
     }
-    if (question2 ==="10") {
+    if (question2 === "10") {
       result2 = 10;
     } else {
       result2 = 0;
@@ -43,8 +43,8 @@ $(document).ready(function() {
     }
     if (question5 === "10") {
       result5 = 10;
-    }else {
-      result5= 0;
+    } else {
+      result5 = 0;
     }
     var score = (result1 + result2 + result3 + result4 + result5);
     console.log(score);
@@ -52,24 +52,20 @@ $(document).ready(function() {
     $("#result").text(`You scored ${score} points.`);
 
     var remarks = $("#remarks").val();
-    if(sum => 40){
+    if (sum => 40) {
       $("#remarks").text('Excellent');
 
-    }
-    else if(sum == 30) {
+    } else if (sum == 30) {
       $("#remarks").text('Fair');
-    }
-
-    else {
+    } else {
       $('#remarks').text('Poor');
     }
 
-    
 
 
 
-    
+
+
   });
-  
-})
 
+})
