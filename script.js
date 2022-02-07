@@ -55,7 +55,7 @@ $(document).ready(function () {
     if (score > 40) {
       $("#remarks").text('Excellent');
 
-    } else if (score > 30) {
+    } else if (score >= 30) {
       $("#remarks").text('Fair');
     } else {
       $('#remarks').text('Poor');
