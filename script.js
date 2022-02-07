@@ -52,10 +52,10 @@ $(document).ready(function () {
     $("#result").text(`You scored ${score} points.`);
 
     var remarks = $("#remarks").val();
-    if (sum => 40) {
+    if (score > 40) {
       $("#remarks").text('Excellent');
 
-    } else if (sum == 30) {
+    } else if (score > 30) {
       $("#remarks").text('Fair');
     } else {
       $('#remarks').text('Poor');
